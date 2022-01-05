@@ -135,4 +135,7 @@ end
 Hooks.RegisterCallback("OnBombEsp", OnBombEsp)
 --]]
 
-Hooks.RegisterCallback("OnFireEvent", OnEvent)
+EventListener.AddEvent("item_equip")
+EventListener.AddEvent("player_death")
+
+Hooks.RegisterCallback("OnGameEvent", OnEvent)
